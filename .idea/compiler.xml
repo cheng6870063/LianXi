@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Interview" />
         <module name="lianxi1" />
         <module name="lianxi2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Interview" target="1.5" />
       <module name="Lianxi" target="1.5" />
       <module name="lianxi1" target="1.8" />
       <module name="lianxi2" target="1.5" />
