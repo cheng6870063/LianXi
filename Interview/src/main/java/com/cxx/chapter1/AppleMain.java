@@ -18,11 +18,11 @@ public class AppleMain {
         List<Apple> weightApples1 = filterWeightApples(inventory,150);
         System.out.println(weightApples1.size());
 
-        //行为参数化：方法
+        //行为参数化：方法引用
         List<Apple> greenApples2 = filterApples(inventory,AppleMain::isGreenApple);
         System.out.println(greenApples2.size());
 
-        //行为参数化：方法
+        //行为参数化：方法引用
         List<Apple> weightApples2 = filterApples(inventory,AppleMain::isweightApple);
         System.out.println(weightApples2.size());
 
