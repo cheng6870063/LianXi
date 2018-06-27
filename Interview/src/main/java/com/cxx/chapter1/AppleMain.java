@@ -38,7 +38,6 @@ public class AppleMain {
                 "brown".equals(a.getColor()));
         System.out.println(weirdApples);
 
-
         //顺序处理：
         List<Apple> heavyApples1 = inventory.stream().filter((Apple a) -> a.getWeight() > 150)
                                             .collect(Collectors.toList());
