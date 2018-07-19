@@ -136,6 +136,9 @@ public class TestMain {
         int calories = menu.stream()
                 .map(Dish::getCalories)
                 .reduce(0, Integer::sum);
+        int calories1 = menu.stream()
+                .map(Dish::getCalories)
+                .reduce(0, (a, b) -> a + b);
     }
 
 }
