@@ -139,6 +139,21 @@ public class TestMain {
         int calories1 = menu.stream()
                 .map(Dish::getCalories)
                 .reduce(0, (a, b) -> a + b);
+
+        int totalCalories = menu.stream().collect(Collectors.summingInt(Dish::getCalories));
+
+        double avgCalories = menu.stream().collect(Collectors.averagingInt(Dish::getCalories));
+
+        IntSummaryStatistics menuStatistics =
+                menu.stream().collect(Collectors.summarizingInt(Dish::getCalories));
+
+        menuStatistics.getCount();
+        menuStatistics.getMax();
+        menuStatistics.getMin();
+        menuStatistics.getSum();
+        menuStatistics.getAverage();
+        menuStatistics.toString();
+        System.out.println(menuStatistics);
     }
 
 }
