@@ -5,11 +5,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
+    <!--用于指定applicationContext.xml配置文件的位置-->
  <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/applicationContext.xml</param-value>
   </context-param>
 
+    <!--ContextLoaderListener是Spring的监听器，它的作用就是启动Web容器时，
+    自动装配ApplicationContext的配置信息。因为它实现了ServletContextListener
+    这个接口，在web.xml配置这个监听器，启动容器时，就会默认执行它实现的方法。-->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
