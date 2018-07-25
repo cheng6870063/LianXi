@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
 @Controller
-@RequestMapping(value="/hello", method = GET)
+@RequestMapping(value="/hello")
 public class HelloReaderController {
 
     @RequestMapping(value = "/hello", method = GET)
