@@ -34,7 +34,8 @@ public class TestGet {
             HttpClient client = new DefaultHttpClient();
 
             // 创建httpget.
-            HttpGet httpget = new HttpGet("http://localhost:8080/test/test01" + "?" + str);
+            //HttpGet httpget = new HttpGet("http://localhost:8080/test/test01" + "?" + str);
+            HttpGet httpget = new HttpGet("http://localhost:8080/test/test02" + "?" + str);
             httpget.setConfig(requestConfig);
             HttpResponse response = client.execute(httpget);
 

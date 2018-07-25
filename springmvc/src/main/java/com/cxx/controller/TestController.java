@@ -120,8 +120,7 @@ public class TestController {
     @RequestMapping(value = "/test06", method = {RequestMethod.POST,RequestMethod.GET})
     @ResponseBody
     public String testJson(HttpServletRequest request) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(
-        (ServletInputStream) request.getInputStream(), "utf-8"));
+        BufferedReader br = new BufferedReader(new InputStreamReader((ServletInputStream) request.getInputStream(), "utf-8"));
         StringBuffer sb = new StringBuffer("");
         String temp;
         while ((temp = br.readLine()) != null) {
