@@ -1,6 +1,7 @@
 package com.cxx.controller;
 
 
+import net.sf.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
 import java.util.Iterator;
@@ -111,6 +113,23 @@ public class TestController {
         }
         long  endTime=System.currentTimeMillis();
         System.out.println("方法三的运行时间："+String.valueOf(endTime-startTime)+"ms");
+        return "hello";
+    }
+
+
+    @RequestMapping(value = "/test06", method = {RequestMethod.POST,RequestMethod.GET})
+    @ResponseBody
+    public String testJson(HttpServletRequest request) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(
+        (ServletInputStream) request.getInputStream(), "utf-8"));
+        StringBuffer sb = new StringBuffer("");
+        String temp;
+        while ((temp = br.readLine()) != null) {
+                  sb.append(temp);
+        }
+        br.close();
+        String acceptjson = sb.toString();
+        JSONObject jo = JSONObject.fromObject(acceptjson);
         return "hello";
     }
 }
