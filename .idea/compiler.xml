@@ -9,6 +9,7 @@
         <module name="Interview" />
         <module name="lianxi1" />
         <module name="lianxi2" />
+        <module name="springmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +17,7 @@
       <module name="Lianxi" target="1.5" />
       <module name="lianxi1" target="1.8" />
       <module name="lianxi2" target="1.5" />
+      <module name="springmvc" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
