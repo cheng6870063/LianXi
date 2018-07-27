@@ -15,4 +15,7 @@
     <!--开启注解处理器-->
   </context:annotation-config>
 
+  <!-- 引入同文件夹下的redis属性配置文件 -->
+  <import resource="redis-context.xml"/>
+
 </beans>
