@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 @Controller
 @RequestMapping(value="/member")
@@ -50,6 +48,11 @@ public class redisController {
        System.out.println(gender);
        Set<String> result = redisTemplate.keys("*multi*");
        System.out.println(result.size());
+        List<String> keys = new ArrayList<String>();
+        keys.add("multi1");
+        keys.add("multi2");
+        keys.add("multi3");
+        System.out.println(redisTemplate.opsForValue().multiGet(keys));
        return "success";
     }
 }
