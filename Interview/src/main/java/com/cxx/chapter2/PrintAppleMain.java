@@ -29,8 +29,8 @@ public class PrintAppleMain {
             }
         });
 
-        //函数式接口：只定义了一个抽象方法得到接口
-        //道Lambda表达式可以被赋给一个变量，或传递给一个接受函数式接口作为参数的方法
+        //函数式接口：只定义了一个抽象方法的接口
+        //Lambda表达式可以被赋给一个变量，或传递给一个接受函数式接口作为参数的方法
         //行为参数化：lamda(排序）
         inventory.sort(
                 (Apple a1, Apple a2) -> a1.getWeight().compareTo(a2.getWeight()));
