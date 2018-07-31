@@ -5,8 +5,11 @@ import java.util.Optional;
 public class Java8Tester {
     public static void main(String args[]){
 
+        //Optional是一个可以存NUll值的容器，当把一个null值放在里面，执行一些会报空指针
+        //的操作，则不会报空指针
+        System.out.println(Optional.ofNullable(null).toString());
 
-        Java8Tester java8Tester = new Java8Tester();
+      /*  Java8Tester java8Tester = new Java8Tester();
         Integer value1 = null;
         Integer value2 = new Integer(10);
 
@@ -17,7 +20,7 @@ public class Java8Tester {
         Optional<Integer> b = Optional.of(value2);
         System.out.println(java8Tester.sum(a,b));
 
-        //System.out.println(value1 + value2);
+        //System.out.println(value1 + value2);*/
 
     }
 
