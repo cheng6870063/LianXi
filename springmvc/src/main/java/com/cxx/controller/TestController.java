@@ -80,6 +80,8 @@ public class TestController {
     @RequestMapping(value = "/test05", method = {RequestMethod.POST,RequestMethod.GET})
     @ResponseBody
     public String testfile3(HttpServletRequest request) throws IOException {
+        String name = request.getParameter("string");
+        System.out.println(name);
         long  startTime=System.currentTimeMillis();
         //将当前上下文初始化给  CommonsMutipartResolver （多部分解析器）
         CommonsMultipartResolver multipartResolver=new CommonsMultipartResolver(
