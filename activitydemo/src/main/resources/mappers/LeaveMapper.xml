@@ -4,7 +4,7 @@
 
 	<resultMap id="LeaveInfoMap" type="com.example.activitydemo.entity.LeaveInfo">
 		<result property="id" column="id" />
-		<result property="leaveMsg" column="leave_msg" />
+		<result property="leaveMsg" column="leaveMsg" />
 		<result property="status" column="status"/>
 	</resultMap>
 	
@@ -27,7 +27,7 @@
 				id = #{id},
 			</if>
 			<if test="leaveMsg != null and leaveMsg != ''">
-				leave_msg = #{leaveMsg},
+				leaveMsg = #{leaveMsg},
 			</if>
 			<if test="status != null and status != ''">
 				status = #{status}
