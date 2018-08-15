@@ -76,8 +76,14 @@ public class TestLeaveService {
 	 * @param execution 执行实例的代理对象 ,代表的是一个请假的具体实例
 	 * @return
 	 */
-	public List<String> findProjectManager(DelegateExecution execution) {
-		return Arrays.asList("project1","project2");
+	public List<String> findProjectManager(DelegateExecution execution,int type) {
+		if(type==1){
+			return Arrays.asList("project1","project2");
+		}else{
+			return Arrays.asList("project3","project4");
+		}
+		/**动态获取审批人可以从新查询当前用户，再获取当前用户对应的领导*/
+		//Employee employee = SessionContext.get();
 	}
 	
 	/**
@@ -86,7 +92,7 @@ public class TestLeaveService {
 	 * @return
 	 */
 	public List<String> findHrManager(DelegateExecution execution) {
-		return Arrays.asList("hr1","hr2");
+	    return Arrays.asList("hr1","hr2");
 	}
 	
 	/**
