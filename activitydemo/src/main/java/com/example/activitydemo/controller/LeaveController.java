@@ -2,6 +2,10 @@ package com.example.activitydemo.controller;
 
 import com.example.activitydemo.service.LeaveService;
 import com.example.activitydemo.service.TestLeaveService;
+import org.activiti.engine.RepositoryService;
+import org.activiti.engine.TaskService;
+import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 
 @RestController
@@ -22,8 +27,16 @@ public class LeaveController {
 
 	@Autowired
 	private LeaveService leaveService;
-	
-	
+
+	@Autowired
+	private RepositoryService repositoryService;
+
+	@Autowired
+	private TaskService taskService;
+
+	@Autowired
+	private TestLeaveService testLeaveService;
+
 	/**
 	 * 发起申请，新增信息
 	 * @param msg
@@ -68,7 +81,7 @@ public class LeaveController {
 	public void showImg(String processDefId,HttpServletRequest request,HttpServletResponse response) {
 	
 		try {
-			InputStream inputStream = TestLeaveService.findProcessPic(processDefId);
+			InputStream inputStream = testLeaveService.findProcessPic(processDefId);
 			byte[] b = new byte[1024];
 			int len = -1;
 			while((len = inputStream.read(b, 0, 1024)) != -1) {
@@ -78,6 +91,49 @@ public class LeaveController {
 			logger.error("读取流程图片出错:{" + e + "}");
 		}
 		
+	}
+
+	/*
+	部署流程定义
+	 */
+	@RequestMapping("/deployment")
+	public void deployment(String processDefId,HttpServletRequest request,HttpServletResponse response) {
+
+		//根据bpmn文件部署流程
+		//Deployment deployment = repositoryService.createDeployment().addClasspathResource("processes/MyProcess.bpmn").deploy();
+		//获取流程定义
+		//ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().deploymentId(deployment.getId()).singleResult();
+		/*//启动流程定义，返回流程实例
+		ProcessInstance pi = runtimeService.startProcessInstanceById(processDefinition.getId());
+		String processId = pi.getId();
+		System.out.println("流程创建成功，当前流程实例ID："+processId);
+
+		Task task=taskService.createTaskQuery().processInstanceId(processId).singleResult();
+		System.out.println("第一次执行前，任务名称："+task.getName());
+		taskService.complete(task.getId());
+
+		task = taskService.createTaskQuery().processInstanceId(processId).singleResult();
+		System.out.println("第二次执行前，任务名称："+task.getName());
+		taskService.complete(task.getId());
+
+		task = taskService.createTaskQuery().processInstanceId(processId).singleResult();
+		System.out.println("task为null，任务执行完毕："+task);
+        */
+        ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+		List<ProcessDefinition> list = query.list();
+		ProcessDefinition result = list.get(0);
+		//ProcessDefinition result = query.singleResult();
+ 		String name = result.getDiagramResourceName();
+		InputStream inputStream = repositoryService.getResourceAsStream(result.getDeploymentId(), name);
+		byte[] b = new byte[1024];
+		int len = -1;
+		try {
+			while((len = inputStream.read(b, 0, 1024)) != -1) {
+                response.getOutputStream().write(b, 0, len);
+            }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 }

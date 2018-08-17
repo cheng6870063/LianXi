@@ -6,13 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="activitydemo" />
+        <module name="Concurrent" />
         <module name="Interview" />
         <module name="lianxi1" />
         <module name="lianxi2" />
         <module name="springmvc" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
+      <module name="activitidemo" target="1.8" />
+      <module name="activitydemo" target="1.8" />
+      <module name="Concurrent" target="1.5" />
       <module name="Interview" target="1.8" />
       <module name="Lianxi" target="1.5" />
       <module name="lianxi1" target="1.8" />
