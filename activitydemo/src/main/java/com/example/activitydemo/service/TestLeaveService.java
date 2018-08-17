@@ -2,7 +2,6 @@ package com.example.activitydemo.service;
 
 import com.example.activitydemo.dao.LeaveMapper;
 import com.example.activitydemo.entity.LeaveInfo;
-import org.activiti.bpmn.model.BpmnModel;
 import org.activiti.engine.HistoryService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
@@ -12,8 +11,8 @@ import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.impl.RepositoryServiceImpl;
 import org.activiti.engine.impl.persistence.entity.ProcessDefinitionEntity;
 import org.activiti.engine.impl.persistence.entity.TaskEntity;
-import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.task.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,7 +38,7 @@ public class TestLeaveService {
 	private HistoryService historyService;
 	
 	@Autowired
-	private static RepositoryService repositoryService;
+	private RepositoryService repositoryService;
 	/**
 	 * 启动流程
 	 * 
@@ -130,8 +129,8 @@ public class TestLeaveService {
 	}
 	
 	public InputStream getImgStream(String taskId) {
-		BpmnModel bpmnModel = new BpmnModel();
-		ProcessDefinitionEntity entity = findProcessDefinitionEntityByTaskId(taskId);
+		//BpmnModel bpmnModel = new BpmnModel();
+		//ProcessDefinitionEntity entity = findProcessDefinitionEntityByTaskId(taskId);
 		//ProcessDiagramGenerator.generateDiagram
 		//InputStream imageStream = ProcessDiagramGenerator.generateDiagram(entity, "png", runtimeService.getActiveActivityIds(findProcessInstanceByTaskId(taskId).getId()));
 
@@ -184,21 +183,10 @@ public class TestLeaveService {
 	 * @return
 	 */
 	public InputStream findProcessPic(String processDefId) {
-		//Task task = taskService.createTaskQuery()
-				//.taskId("15009")//使用任务ID查询
-				//.singleResult();
-		//获取流程实例ID
-		//String processInstanceId = task.getProcessInstanceId();
-		//ProcessDefinitionEntity pde = (ProcessDefinitionEntity) repositoryService.getProcessDefinition(processInstanceId);
-		/*ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
-		ProcessDefinition result = query.processDefinitionId(processInstanceId).singleResult();
+		ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+		ProcessDefinition result = (ProcessDefinition) query.processDefinitionId(processDefId);
 		String name = result.getDiagramResourceName();
-		InputStream inputStream = repositoryService.getResourceAsStream(result.getDeploymentId(), name);*/
-		//InputStream inputStream = repositoryService.getResourceAsStream(pde.getDeploymentId(), pde.getDiagramResourceName());
-		Deployment deployment = repositoryService.createDeployment().addClasspathResource("processes/MyProcess.bpmn").deploy();
-		ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().deploymentId(deployment.getId()).singleResult();
-		String name = processDefinition.getDiagramResourceName();
-		InputStream inputStream = repositoryService.getResourceAsStream(processDefinition.getDeploymentId(), name);
-		return inputStream;
+		InputStream inputStream = repositoryService.getResourceAsStream(result.getDeploymentId(), name);
+       return inputStream;
 	}
 }

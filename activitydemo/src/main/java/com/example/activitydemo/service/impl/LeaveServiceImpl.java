@@ -4,12 +4,16 @@ import com.example.activitydemo.dao.LeaveMapper;
 import com.example.activitydemo.entity.LeaveInfo;
 import com.example.activitydemo.service.LeaveService;
 import com.example.activitydemo.service.TestLeaveService;
+import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
+import org.activiti.engine.repository.ProcessDefinition;
+import org.activiti.engine.repository.ProcessDefinitionQuery;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -24,6 +28,9 @@ public class LeaveServiceImpl implements LeaveService {
 	private LeaveMapper leaveMapper;
 	@Autowired
 	private RuntimeService runtimeService;
+
+	@Autowired
+	private RepositoryService repositoryService;
 	@Override
 	public void addLeaveAInfo(String msg) {
 		LeaveInfo leaveInfo = new LeaveInfo();
@@ -54,6 +61,15 @@ public class LeaveServiceImpl implements LeaveService {
 	@Override
 	public void completeTaskByUser(String taskId, String userId, String audit) {
 		testLeaveService.completeTaskByUser(taskId, userId, audit);
+	}
+
+	@Override
+	public InputStream findProcessPic(String deploymentId) {
+		ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
+		ProcessDefinition result = query.deploymentId(deploymentId).singleResult();
+		String name = result.getDiagramResourceName();
+		InputStream inputStream = repositoryService.getResourceAsStream(result.getDeploymentId(), name);
+		return inputStream;
 	}
 
 }

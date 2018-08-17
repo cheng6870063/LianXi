@@ -2,6 +2,7 @@ package com.example.activitydemo.service;
 
 import com.example.activitydemo.entity.LeaveInfo;
 
+import java.io.InputStream;
 import java.util.List;
 
 
@@ -26,4 +27,7 @@ public interface LeaveService {
 	 * @param audit
 	 */
 	void completeTaskByUser(String taskId, String userId, String audit);
+
+
+	InputStream findProcessPic(String deploymentId);
 }
