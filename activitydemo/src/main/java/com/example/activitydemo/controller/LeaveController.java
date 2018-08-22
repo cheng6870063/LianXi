@@ -2,10 +2,14 @@ package com.example.activitydemo.controller;
 
 import com.example.activitydemo.service.LeaveService;
 import com.example.activitydemo.service.TestLeaveService;
-import org.activiti.engine.RepositoryService;
-import org.activiti.engine.TaskService;
+import org.activiti.bpmn.model.BpmnModel;
+import org.activiti.engine.*;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.repository.ProcessDefinitionQuery;
+import org.activiti.engine.runtime.ProcessInstance;
+import org.activiti.engine.task.Task;
+import org.activiti.image.ProcessDiagramGenerator;
+import org.activiti.image.impl.DefaultProcessDiagramGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.util.List;
 
 
 @RestController
@@ -35,6 +39,11 @@ public class LeaveController {
 
 	@Autowired
 	private TestLeaveService testLeaveService;
+	@Autowired
+	private RuntimeService runtimeService;
+
+	@Autowired
+	private HistoryService historyService;
 
 	/**
 	 * 发起申请，新增信息
@@ -74,8 +83,11 @@ public class LeaveController {
 		leaveService.completeTaskByUser(taskId, userId, audit);
 		return "审批完成...";
 	}
-	
-	
+
+
+	/*
+	获取流程图片（页面显示，有乱码）
+	 */
 	@RequestMapping("/showImg")
 	public void showImg(String deploymentId,HttpServletRequest request,HttpServletResponse response) {
 	
@@ -93,9 +105,9 @@ public class LeaveController {
 	}
 
 	/*
-	部署流程定义
+	获取流程图片（页面显示，有乱码）
 	 */
-	@RequestMapping("/deployment")
+	@RequestMapping("/readImage")
 	public void deployment(String deploymentId,HttpServletRequest request,HttpServletResponse response) {
 
 		ProcessDefinitionQuery query = repositoryService.createProcessDefinitionQuery();
@@ -117,5 +129,98 @@ public class LeaveController {
 			e.printStackTrace();
 		}
 	}
+
+	/*
+	获取流程图片（页面显示，无乱码）
+	 */
+	@RequestMapping("/readtopage")
+	public void readToPage(String deploymentId,HttpServletRequest request,HttpServletResponse response) {
+
+		ProcessInstance pi = runtimeService.createProcessInstanceQuery().deploymentId(deploymentId).singleResult();
+		BpmnModel bpmnModel = repositoryService.getBpmnModel(pi.getProcessDefinitionId());
+		List<String> activeIds = runtimeService.getActiveActivityIds(pi.getId());
+		ProcessDiagramGenerator p = new DefaultProcessDiagramGenerator();
+		InputStream inputStream = p.generateDiagram(bpmnModel, "png","宋体", "宋体",
+				"宋体", null,0.0);
+
+		byte[] b = new byte[1024];
+		int len = -1;
+		try {
+			while((len = inputStream.read(b, 0, 1024)) != -1) {
+				response.getOutputStream().write(b, 0, len);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	/*
+	获取流程图片到文件夹（无乱码）
+	 */
+	@RequestMapping("/readandwriteImage")
+	public void readandwriteImage(String deploymentId,HttpServletRequest request,HttpServletResponse response) {
+
+		ProcessInstance pi = runtimeService.createProcessInstanceQuery().deploymentId(deploymentId).singleResult();
+		BpmnModel bpmnModel = repositoryService.getBpmnModel(pi.getProcessDefinitionId());
+		List<String> activeIds = runtimeService.getActiveActivityIds(pi.getId());
+		ProcessDiagramGenerator p = new DefaultProcessDiagramGenerator();
+		InputStream is = p.generateDiagram(bpmnModel, "png","宋体", "宋体",
+				"宋体", null,0.0);
+
+		File file = new File("F:\\activiti\\process.png");
+		OutputStream os = null;
+		try {
+			os = new FileOutputStream(file);
+			byte[] buffer = new byte[1024];
+			int len = 0;
+			while ((len = is.read(buffer)) != -1) {
+				os.write(buffer, 0, len);
+			}
+			os.close();
+			is.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+	/*
+	高亮显示已审批节点
+	 */
+	@RequestMapping("/hightLightImag")
+	public void hightLightImag(String taskId,HttpServletRequest request,HttpServletResponse response) {
+
+			//使用任务ID，查询任务对象
+		Task task = taskService.createTaskQuery()//
+				    .taskId(taskId)//使用任务ID查询
+				    .singleResult();
+		//创建核心引擎流程对象processEngine
+		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
+		//流程定义
+		BpmnModel bpmnModel = processEngine.getRepositoryService().getBpmnModel(task.getProcessDefinitionId());
+
+		//正在活动节点
+		List<String> activeActivityIds = processEngine.getRuntimeService().getActiveActivityIds(task.getExecutionId());
+
+		ProcessDiagramGenerator pdg = processEngine.getProcessEngineConfiguration().getProcessDiagramGenerator();
+
+		//生成流图片
+		InputStream inputStream = pdg.generateDiagram(bpmnModel, "PNG", activeActivityIds, activeActivityIds,
+				"宋体",
+				"宋体",
+				"宋体",
+				processEngine.getProcessEngineConfiguration().getProcessEngineConfiguration().getClassLoader(), 1.0);
+		try {
+				byte[] b = new byte[1024];
+				int len = -1;
+				while((len = inputStream.read(b, 0, 1024)) != -1) {
+					response.getOutputStream().write(b, 0, len);
+				}
+			} catch (IOException e) {
+				logger.error("读取流程图片出错:{" + e + "}");
+			}
+
+		}
 	
 }
