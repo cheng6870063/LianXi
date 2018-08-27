@@ -7,7 +7,7 @@
     <userTask id="usertask1" name="项目经理审批" activiti:candidateUsers="${leaveService.findProjectManager(execution,2)}"></userTask>
     <sequenceFlow id="flow1" sourceRef="servicetask1" targetRef="usertask1"></sequenceFlow>
     <sequenceFlow id="flow2" sourceRef="usertask1" targetRef="reviewDecision"></sequenceFlow>
-    <userTask id="usertask2" name="人事经理审批" activiti:candidateUsers="${leaveService.findHrManager(execution)}"></userTask>
+    <userTask id="usertask2" name="人事经理审批" activiti:assignee="ld"></userTask>
     <sequenceFlow id="flow3" name="同意" sourceRef="reviewDecision" targetRef="usertask2">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${audit=='pass'}]]></conditionExpression>
     </sequenceFlow>
@@ -15,7 +15,7 @@
     <sequenceFlow id="flow4" sourceRef="usertask2" targetRef="exclusivegateway1"></sequenceFlow>
     <serviceTask id="servicetask2" name="修改请假单状态（pass）" activiti:expression="#{leaveService.changeStatus(execution,'pass')}"></serviceTask>
     <sequenceFlow id="flow5" name="同意" sourceRef="exclusivegateway1" targetRef="servicetask2">
-      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${audit=='pass'}]]></conditionExpression>
+      <conditionExpression xsi:type="tFormalExpression"><![CDATA[${audit=='passes'}]]></conditionExpression>
     </sequenceFlow>
     <endEvent id="endevent1" name="End"></endEvent>
     <sequenceFlow id="flow6" sourceRef="servicetask2" targetRef="endevent1"></sequenceFlow>
@@ -81,7 +81,7 @@
         <omgdi:waypoint x="690.0" y="238.0"></omgdi:waypoint>
         <omgdi:waypoint x="750.0" y="237.0"></omgdi:waypoint>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="14.0" width="24.0" x="690.0" y="238.0"></omgdc:Bounds>
+          <omgdc:Bounds height="14.0" width="100.0" x="690.0" y="238.0"></omgdc:Bounds>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow6" id="BPMNEdge_flow6">

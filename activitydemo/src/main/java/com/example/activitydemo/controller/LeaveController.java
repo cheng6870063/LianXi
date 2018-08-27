@@ -136,9 +136,9 @@ public class LeaveController {
 	@RequestMapping("/readtopage")
 	public void readToPage(String deploymentId,HttpServletRequest request,HttpServletResponse response) {
 
-		ProcessInstance pi = runtimeService.createProcessInstanceQuery().deploymentId(deploymentId).singleResult();
-		BpmnModel bpmnModel = repositoryService.getBpmnModel(pi.getProcessDefinitionId());
-		List<String> activeIds = runtimeService.getActiveActivityIds(pi.getId());
+		//ProcessInstance pi = runtimeService.createProcessInstanceQuery().deploymentId(deploymentId).singleResult();
+		ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().deploymentId(deploymentId).singleResult();
+		BpmnModel bpmnModel = repositoryService.getBpmnModel(processDefinition.getId());
 		ProcessDiagramGenerator p = new DefaultProcessDiagramGenerator();
 		InputStream inputStream = p.generateDiagram(bpmnModel, "png","宋体", "宋体",
 				"宋体", null,0.0);
