@@ -15,11 +15,7 @@ import java.util.Map;
 public class DemoController {
 
     private static final Logger logger = LoggerFactory.getLogger(DemoController.class);
-   /* @Post(value = "login", summary = "示例1", parameters = {
-            @Param(name = "username", description = "用户名", dataType = DataType.STRING, required = true, in = "body"),
-            @Param(name = "password", description = "密码", dataType = DataType.PASSWORD, required = true, in = "body"),
-            @Param(name = "sex", description = "性别", dataType = DataType.INTEGER, items = "0,1", in = "body"),
-    })*/
+
     @RequestMapping(value = "login", method = RequestMethod.POST)
     public Object login(@RequestBody Map<String, Object> param) throws Exception {
         return param;

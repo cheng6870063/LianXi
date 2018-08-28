@@ -2,14 +2,51 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="spswagger:war exploded" />
+      <artifact name="springmvcswagger:war exploded" />
       <artifact name="ssmactiviti:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5fb3895-a224-47f6-a372-f4a07f09e873" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lianxi2/target/classes/com/bean/Greeting.class" afterPath="$PROJECT_DIR$/lianxi2/target/classes/com/bean/Greeting.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_4_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/spswagger_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/spswagger_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/oauth2-redirect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui-bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui-bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui-standalone-preset.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui-standalone-preset.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.js.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/springmvcswagger_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/springmvcswagger_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/controller/DemoController.java" afterPath="$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/controller/DemoController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,12 +83,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="165">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springmvcswagger/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="0">
+              <caret line="195" column="20" lean-forward="false" selection-start-line="195" selection-start-column="20" selection-end-line="195" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -60,25 +97,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="swagger-ui.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1298">
+              <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="springmvc-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/resources/springmvc-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="SwaggerConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/config/SwaggerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compiler.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <file leaf-file-name="DemoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/controller/DemoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="-160">
+              <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,89 +167,6 @@
             <state relative-caret-position="198">
               <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="112" lean-forward="false" selection-start-line="12" selection-start-column="112" selection-end-line="12" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1535434927211" expanded="true" signature="119524:119669" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119524:119687" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119524:119806" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119524:119821" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119757:119793" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119856:123100" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119869:123085" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119923:120188" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119942:120173" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="119975:120153" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120015:120119" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120036:120097" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120242:120629" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120261:120614" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120377:120594" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120417:120560" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120438:120538" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120679:120985" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120698:120970" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120772:120950" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120812:120916" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="120833:120894" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121036:121301" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121055:121286" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121088:121266" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121128:121232" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121149:121210" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121344:121650" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121363:121635" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121437:121615" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121477:121581" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121498:121559" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121701:122055" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121720:122040" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121803:122020" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121843:121986" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="121864:121964" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122090:122396" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122109:122381" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122183:122361" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122223:122327" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122244:122305" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122448:122758" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122467:122743" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122545:122723" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122585:122689" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122606:122667" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122806:123071" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122825:123056" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122858:123036" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122898:123002" ph="..." />
-                <marker date="1535434927211" expanded="true" signature="122919:122980" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -216,12 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/activitidemo/src/main/java/com/entity/Person.java" />
-        <option value="$PROJECT_DIR$/activitidemo/src/main/resources/processes/myprocess.bpmn" />
-        <option value="$PROJECT_DIR$/activitidemo/pom.xml" />
-        <option value="$PROJECT_DIR$/activitydemo/src/main/java/com/example/activitydemo/Config.java" />
-        <option value="$PROJECT_DIR$/activitydemo/src/main/java/com/example/activitydemo/ActivitydemoApplication.java" />
-        <option value="$PROJECT_DIR$/activitydemo/pom.xml" />
         <option value="$PROJECT_DIR$/activitydemo/src/main/java/com/example/activitydemo/dao/LeaveMapper.java" />
         <option value="$PROJECT_DIR$/activitydemo/src/main/resources/processes/process2.bpmn" />
         <option value="$PROJECT_DIR$/activitydemo/src/main/resources/mappers/LeaveMapper.xml" />
@@ -267,6 +256,12 @@
         <option value="$PROJECT_DIR$/.idea/encodings.xml" />
         <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/springmvcswagger/src/main/resources/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/springmvcswagger/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/index.html" />
+        <option value="$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/controller/DemoController.java" />
       </list>
     </option>
   </component>
@@ -277,6 +272,7 @@
     <exe-path />
     <annotation-enable>false</annotation-enable>
     <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
@@ -717,6 +713,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -724,20 +724,69 @@
               <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
               <item name="LianXi" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LianXi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LianXi" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvcswagger" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="swagger" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spswagger" />
@@ -757,11 +806,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\LianXi\springmvcswagger\src\main\webapp\WEB-INF\swagger" />
+      <recent name="F:\github\LianXi\springmvcswagger\src\main\java\com\cxx\controller" />
+      <recent name="F:\github\LianXi\springmvcswagger\src\main\java\com\cxx\config" />
+      <recent name="F:\github\LianXi\springmvcswagger\src\main\resources" />
       <recent name="F:\github\LianXi\swagger\src\main\webapp\WEB-INF\swagger" />
-      <recent name="F:\github\LianXi\activitydemo\src\main\java\com\example\activitydemo" />
-      <recent name="F:\github\LianXi\activitydemo\src\main\resources" />
-      <recent name="F:\github\LianXi\activitydemo\src\main\resources\processes" />
-      <recent name="F:\StudyIdeaWorkspace\Lianxi\Interview\src\main\java\com\cxx\chapter2" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cxx.Chapter8Strategy" />
@@ -784,7 +833,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.ssmactiviti">
+  <component name="RunManager" selected="Tomcat Server.swagger">
     <configuration name="ActivitidemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.activitidemo.ActivitidemoApplication" />
@@ -1028,7 +1077,7 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="ssmactiviti:war exploded" />
-          <artifact name="spswagger:war exploded" />
+          <artifact name="springmvcswagger:war exploded" />
         </option>
       </method>
     </configuration>
@@ -1228,17 +1277,86 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
     </configuration>
-    <list size="10">
+    <configuration name="swagger" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" editBeforeRun="true" APPLICATION_SERVER_NAME="Tomcat 8.0.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://127.0.0.1:8080/swagger/index.html" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springmvcswagger:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_LianXi_5" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <list size="11">
       <item index="0" class="java.lang.String" itemvalue="Application.FileController" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All in ssmactiviti" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.ActivitydemoApplication" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.ActivitidemoApplication" />
-      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.ssmactiviti" />
-      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.springmvc" />
-      <item index="6" class="java.lang.String" itemvalue="Application.SafeDemo1" />
-      <item index="7" class="java.lang.String" itemvalue="Application.JoinDemo" />
-      <item index="8" class="java.lang.String" itemvalue="Application.SafeDemo2" />
-      <item index="9" class="java.lang.String" itemvalue="JUnit.ActivitydemoApplicationTests.contextLoads" />
+      <item index="4" class="java.lang.String" itemvalue="Tomcat Server.swagger" />
+      <item index="5" class="java.lang.String" itemvalue="Tomcat Server.ssmactiviti" />
+      <item index="6" class="java.lang.String" itemvalue="Tomcat Server.springmvc" />
+      <item index="7" class="java.lang.String" itemvalue="Application.SafeDemo1" />
+      <item index="8" class="java.lang.String" itemvalue="Application.JoinDemo" />
+      <item index="9" class="java.lang.String" itemvalue="Application.SafeDemo2" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.ActivitydemoApplicationTests.contextLoads" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -1345,28 +1463,11 @@
       <workItem from="1535425883746" duration="2438000" />
       <workItem from="1535428410231" duration="569000" />
       <workItem from="1535429036452" duration="837000" />
-      <workItem from="1535434872844" duration="64000" />
-    </task>
-    <task id="LOCAL-00001" summary="新增">
-      <created>1529060045740</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1529060045740</updated>
-    </task>
-    <task id="LOCAL-00002" summary="新增">
-      <created>1529375093026</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1529375093026</updated>
-    </task>
-    <task id="LOCAL-00003" summary="新增">
-      <created>1529407272493</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1529407272493</updated>
+      <workItem from="1535434872844" duration="749000" />
+      <workItem from="1535436908499" duration="2180000" />
+      <workItem from="1535442584133" duration="7784000" />
+      <workItem from="1535454817065" duration="1126000" />
+      <workItem from="1535456375714" duration="371000" />
     </task>
     <task id="LOCAL-00004" summary="新增">
       <created>1529407760111</created>
@@ -1676,7 +1777,42 @@
       <option name="project" value="LOCAL" />
       <updated>1535434933255</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="新增">
+      <created>1535434944342</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1535434944342</updated>
+    </task>
+    <task id="LOCAL-00049" summary="新增">
+      <created>1535435436403</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1535435436403</updated>
+    </task>
+    <task id="LOCAL-00050" summary="新增">
+      <created>1535448216097</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1535448216097</updated>
+    </task>
+    <task id="LOCAL-00051" summary="新增">
+      <created>1535454683152</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1535454683152</updated>
+    </task>
+    <task id="LOCAL-00052" summary="新增">
+      <created>1535454699243</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1535454699243</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1688,7 +1824,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320371000" />
+    <option name="totallyTimeSpent" value="332517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1715,15 +1851,18 @@
       <window_info id="JSF" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14482759" sideWeight="0.4939302" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3051724" sideWeight="0.48786038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32931036" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45517242" sideWeight="0.4939302" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25644916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19726859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="BPMNPalette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09711684" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1734,10 +1873,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="BPMN Editor" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.029590288" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37758622" sideWeight="0.4939302" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3051724" sideWeight="0.48786038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1" sideWeight="0.4939302" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.097770154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1855,70 +1991,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/1291324977/FileRecv/AutoupdateService.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activitydemo/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/resources/activiti-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="11" lean-forward="false" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/java/com/cxx/bean/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="47" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/YiCheng/mycompany/tools/jdk1.8.0_91/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="2428" column="22" lean-forward="false" selection-start-line="2428" selection-start-column="22" selection-end-line="2428" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/java/com/cxx/bean/SaleItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssmactiviti/src/main/java/com/cxx/bean/Sale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2002">
@@ -2108,7 +2180,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="72" column="34" lean-forward="true" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
@@ -2120,7 +2191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2128,60 +2198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1535434927211" expanded="true" signature="119524:119669" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119524:119687" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119524:119806" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119524:119821" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119757:119793" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119856:123100" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119869:123085" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119923:120188" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119942:120173" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="119975:120153" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120015:120119" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120036:120097" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120242:120629" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120261:120614" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120377:120594" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120417:120560" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120438:120538" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120679:120985" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120698:120970" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120772:120950" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120812:120916" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="120833:120894" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121036:121301" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121055:121286" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121088:121266" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121128:121232" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121149:121210" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121344:121650" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121363:121635" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121437:121615" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121477:121581" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121498:121559" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121701:122055" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121720:122040" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121803:122020" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121843:121986" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="121864:121964" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122090:122396" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122109:122381" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122183:122361" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122223:122327" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122244:122305" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122448:122758" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122467:122743" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122545:122723" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122585:122689" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122606:122667" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122806:123071" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122825:123056" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122858:123036" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122898:123002" ph="..." />
-            <marker date="1535434927211" expanded="true" signature="122919:122980" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2189,7 +2205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="12" column="112" lean-forward="false" selection-start-line="12" selection-start-column="112" selection-end-line="12" selection-end-column="112" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2197,6 +2212,79 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="60" lean-forward="false" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.css" />
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.css.map" />
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/swagger-ui-standalone-preset.js.map" />
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="195" column="20" lean-forward="false" selection-start-line="195" selection-start-column="20" selection-end-line="195" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/swagger-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/webapp/WEB-INF/swagger/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="34" column="33" lean-forward="false" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/resources/springmvc-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -2209,34 +2297,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+    <entry file="file://$PROJECT_DIR$/springmvcswagger/src/main/java/com/cxx/controller/DemoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="-160">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="36" lean-forward="false" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvcswagger/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
       </provider>
     </entry>
   </component>
@@ -2304,7 +2372,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>activitydemo</last-edited>
+          <last-edited>springmvcswagger</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
