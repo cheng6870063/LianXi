@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/Concurrent/src/main/java/com/cxx/Test/SafeDemo.java" />
+    </excludeFromCompile>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -12,17 +15,18 @@
         <module name="lianxi1" />
         <module name="lianxi2" />
         <module name="springmvc" />
+        <module name="ssmactiviti" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="activitidemo" target="1.8" />
       <module name="activitydemo" target="1.8" />
       <module name="Concurrent" target="1.5" />
-      <module name="Interview" target="1.8" />
+      <module name="Interview" target="1.5" />
       <module name="Lianxi" target="1.5" />
-      <module name="lianxi1" target="1.8" />
+      <module name="lianxi1" target="1.5" />
       <module name="lianxi2" target="1.5" />
-      <module name="springmvc" target="1.8" />
+      <module name="springmvc" target="1.5" />
+      <module name="ssmactiviti" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

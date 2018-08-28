@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springmvcswagger:war">
+    <output-path>$PROJECT_DIR$/springmvcswagger/target</output-path>
+    <root id="archive" name="springmvcswagger.war">
+      <element id="artifact" artifact-name="springmvcswagger:war exploded" />
+    </root>
+  </artifact>
+</component>

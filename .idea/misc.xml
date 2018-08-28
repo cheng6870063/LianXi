@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/lianxi2" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/ssmactiviti" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

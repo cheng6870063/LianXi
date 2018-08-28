@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/lianxi1/lianxi1.iml" filepath="$PROJECT_DIR$/lianxi1/lianxi1.iml" />
       <module fileurl="file://$PROJECT_DIR$/lianxi2/lianxi2.iml" filepath="$PROJECT_DIR$/lianxi2/lianxi2.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvcswagger/springmvcswagger.iml" filepath="$PROJECT_DIR$/springmvcswagger/springmvcswagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssmactiviti/ssmactiviti.iml" filepath="$PROJECT_DIR$/ssmactiviti/ssmactiviti.iml" />
     </modules>
   </component>
 </project>
