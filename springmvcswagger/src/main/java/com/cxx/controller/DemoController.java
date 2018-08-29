@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 @RestController
@@ -28,7 +29,13 @@ public class DemoController {
             @ApiParam(name = "id", value = "用户ID", required = true) @PathVariable("id") String userId) {
         logger.info("参数", userId);
         String str = "测试swagger";
-        return str;
+        String string = null;
+        try {
+            string = new String(str.trim().getBytes("ISO-8859-1"), "utf-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return string;
     }
 
 }
