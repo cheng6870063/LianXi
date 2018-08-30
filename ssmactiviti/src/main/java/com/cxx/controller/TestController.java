@@ -7,6 +7,7 @@ import com.cxx.service.UserService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.TaskService;
+import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
@@ -42,12 +43,12 @@ public class TestController {
 
     @RequestMapping(value = "/test",method = RequestMethod.GET)
     public String test(){
-        /*Deployment deploy = repositoryService.createDeployment()
+        Deployment deploy = repositoryService.createDeployment()
                 .addClasspathResource("rule/Sale.drl")
-                .addClasspathResource("processes/SaleRule.bpmn").deploy();*/
+                .addClasspathResource("processes/SaleRule.bpmn").deploy();
 
 
-        ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().deploymentId("2501").singleResult();
+        ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().deploymentId(deploy.getId()).singleResult();
         ProcessInstance pi = runtimeService.startProcessInstanceById(processDefinition.getId());
         //创建事实实例,符合周六周日打九折
         Sale s1 = new Sale("001",createDate("2013-05-05"));
