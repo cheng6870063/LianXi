@@ -1,5 +1,6 @@
 package com.example.activitydemo.controller;
 
+import com.example.activitydemo.entity.LeaveInfo;
 import com.example.activitydemo.service.LeaveService;
 import com.example.activitydemo.service.TestLeaveService;
 import org.activiti.bpmn.model.BpmnModel;
@@ -222,5 +223,19 @@ public class LeaveController {
 			}
 
 		}
+
+	/**
+	 * 更改请假单状态
+	 * @return
+	 */
+	@RequestMapping("/updateLeaveInfo")
+	public String updateLeaveInfo(HttpServletRequest request) {
+		LeaveInfo entity = new LeaveInfo();
+		entity.setId("6b53f5fd-53d8-46dd-9571-9d202c5a573d");
+		entity.setLeaveMsg("请事假");
+		entity.setStatus("passes");
+		leaveService.updateLeaveInfo(entity);
+		return "更改完成...";
+	}
 	
 }

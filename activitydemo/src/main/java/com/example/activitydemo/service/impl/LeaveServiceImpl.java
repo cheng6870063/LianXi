@@ -72,4 +72,9 @@ public class LeaveServiceImpl implements LeaveService {
 		return inputStream;
 	}
 
+	@Override
+	public void updateLeaveInfo(LeaveInfo entity) {
+		leaveMapper.update(entity);
+	}
+
 }

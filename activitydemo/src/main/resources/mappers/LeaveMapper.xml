@@ -20,12 +20,9 @@
 		)
 	</insert>
 	
-	<update id="update" parameterType="com.example.activitydemo.entity.LeaveInfo">
+	<update id="update" parameterType="LeaveInfo">
 		update leave_info 
 		<set>
-			<if test="id != null and id != ''">
-				id = #{id},
-			</if>
 			<if test="leaveMsg != null and leaveMsg != ''">
 				leaveMsg = #{leaveMsg},
 			</if>
