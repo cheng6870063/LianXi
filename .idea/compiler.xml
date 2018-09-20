@@ -13,7 +13,6 @@
         <module name="Concurrent" />
         <module name="Interview" />
         <module name="lianxi1" />
-        <module name="lianxi2" />
         <module name="springmvc" />
         <module name="springmvcswagger" />
         <module name="ssmactiviti" />
@@ -25,7 +24,7 @@
       <module name="Interview" target="1.8" />
       <module name="Lianxi" target="1.5" />
       <module name="lianxi1" target="1.8" />
-      <module name="lianxi2" target="1.5" />
+      <module name="lianxi2" target="1.8" />
       <module name="springmvc" target="1.8" />
       <module name="springmvcswagger" target="1.7" />
       <module name="ssmactiviti" target="1.7" />

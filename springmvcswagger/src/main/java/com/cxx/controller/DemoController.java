@@ -6,6 +6,7 @@ import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
@@ -36,6 +37,44 @@ public class DemoController {
             e.printStackTrace();
         }
         return string;
+    }
+
+    @RequestMapping(value = "testGetParameter01", method = RequestMethod.GET)
+    @ResponseBody
+    public String testGetParameter01(String str1,String str2) throws Exception {
+        /*String str1 = request.getParameter("str1");
+        String str2 = request.getParameter("str2");*/
+        return str1 + str2;
+    }
+
+    @RequestMapping(value = "testGetParameter02/{str1}{str2}", method = RequestMethod.GET)
+    @ResponseBody
+    public String testGetParameter02( @PathVariable String str1, @PathVariable String str2) throws Exception {
+        return str1 + str2;
+    }
+
+    @RequestMapping(value = "testPostParameter01", method = RequestMethod.POST)
+    @ResponseBody
+    public String testPostParameter01(String str1,String str2) throws Exception {
+        return str1 + str2;
+    }
+
+    @RequestMapping(value = "testPostParameter02", method = RequestMethod.POST)
+    @ResponseBody
+    public String testPostParameter02(String str1, MultipartFile file) throws Exception {
+        return str1;
+    }
+
+    @RequestMapping(value = "testPostParameter03", method = RequestMethod.POST)
+    @ResponseBody
+    public String testPostParameter03(@RequestBody String str) throws Exception {
+        return str;
+    }
+
+    @RequestMapping(value = "testPostParameter04", method = RequestMethod.POST)
+    @ResponseBody
+    public String testPostParameter04(@RequestBody User user) throws Exception {
+        return user.toString();
     }
 
 }
